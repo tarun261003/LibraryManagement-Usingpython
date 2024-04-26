@@ -16,15 +16,19 @@ https://github.com/tarun261003/LibraryManagement-Usingpython/assets/122869742/0a
 
 Getting Started
 Clone the repository to your local machine:
-bash
-git clone https://github.com/your-username/library-management-system.git
+-------------------------------------------------------------------------
+git clone https://github.com/your-username/library-management-system.git |
+-------------------------------------------------------------------------
 Navigate to the project directory:
-bash
 
-cd library-management-system
+------------------------------
+cd library-management-system  |
+-----------------------------
 Run the Python script to start the library management system:
-bash
-python library_management.py
+
+-----------------------------
+python library_management.py |
+------------------------------
 Usage
 Upon running the script, you will be prompted to choose a library:
 
