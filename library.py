@@ -71,23 +71,24 @@ def handle(obj):
         else:
             print_slow('Exiting..')
             exit()
-book_names = ["The Shadow Thief", "The Lampo Circus", "Von Gobstopper's Arcade", "Halo", "Hades", "Blackkerchief Dick", "The Country of Carnival", "Village 1104", "The Young Visiters", "The Life of Father McSwiney", "In the Forests of the Night", "Demon in My View", "Shattered Mirror", "Midnight Predator", "Hawksong", "Snakecharm", "Lady Susan", "The Room on the Roof", "The Viper of Milan", "Gabriel Denver", "The Swish of the Curtain", "Sir Quixote of the Moors", "The Lost Princess", "The Prophecy of the Stones", "Fugitive Pieces", "Hours of Idleness", "The Romance of Atlantis", "Kiffe kiffe demain", "The Brown Owl", "The Feather", "The Shifting of the Fire", "The Diary of a Young Girl", "My Brilliant Career", "These Violent Delights", "How to Talk to Girls", "The DUFF", "The Three Adventurers at Fungalore", "Crazy", "The Monk", "Looking Back", "Lost Laysen", "Flowers and Shadows", "Solitaire", "The Icarus Girl", "Eragon", "How the World Began", "Sharh Al-Isti'aadha wal-Basmalah", "The Broken Melody", "The Neon Bible", "True Spirit", "The Loom of Youth", "Mirror Dreams", "Mirror Wakes", "Waywalkers", "Timekeepers", "The Extraordinary and Unusual Adventures of Horatio Lyle", "Swordbird", "Sword Quest", "Sword Mountain", "What's Left of Me"]
-cse_books = ["Introduction to Algorithms", "The C Programming Language", "The Pragmatic Programmer", "The Art of Computer Programming", "Structure and Interpretation of Computer Programs", "The Mythical Man-Month", "Design patterns", "Clean Code", "Code", "Operating systems", "Purely functional data structures", "Software design for flexibility", "Computer Organization and Design: The Hardware/software Interface", "Discrete Mathematics and Its Applications", "Python programming", "Theory of computation", "AI and humanity", "Foundations of Computer Science", "How the Mind Works?", "Intro to CS book", "Mathematical foundations of data science", "Network programming", "Programming Language Design and Implementation", "Computational thinking"]
-ece_books = ["Signals and Systems", "Analogue electronics", "Microe   lectronic Circuits", "Linear ICs", "Engineering Mathematics", "Network theory", "Semiconductor device", "Complex analysis", "Control system", "Control Systems Engineering", "Differential equation", "Digital electronics", "Electrical m", "Electronic circuits", "Linear algebra", "Microprocessors and microcontrollers", "Numerical analysis", "Electronic Devices and Circuit Theory", "Antenna theory by Balanis", "Digital Signal Processing by sk Mitra", "Network Analysis by Van Valkenburg", "CO", "Digital circuits by anand kumar", "Fundamentals of digital SY"]
-gen=Library('Stroy Library',book_names)
-cse=Library('CSE',cse_books)
-ece=Library('ECE',ece_books)
-print_slow('Welcome!...')
-print('1.story\n2.cse\n3.ece\n')
-ch=int(input('Enter the library you want to enter:'))
-if ch==1:
-    print_slow('Taking you to story library')
-    handle(gen)
-elif ch==2:
-    print_slow('Taking you to CSE library')
-    handle(cse)
-elif ch==3:
-    print_slow('Taking you to ECE library')
-    handle(ece)
-else:
-    print('Enter valid one!')
+if __name__=="__main__":
+    book_names = ["The Shadow Thief", "The Lampo Circus", "Von Gobstopper's Arcade", "Halo", "Hades", "Blackkerchief Dick", "The Country of Carnival", "Village 1104", "The Young Visiters", "The Life of Father McSwiney", "In the Forests of the Night", "Demon in My View", "Shattered Mirror", "Midnight Predator", "Hawksong", "Snakecharm", "Lady Susan", "The Room on the Roof", "The Viper of Milan", "Gabriel Denver", "The Swish of the Curtain", "Sir Quixote of the Moors", "The Lost Princess", "The Prophecy of the Stones", "Fugitive Pieces", "Hours of Idleness", "The Romance of Atlantis", "Kiffe kiffe demain", "The Brown Owl", "The Feather", "The Shifting of the Fire", "The Diary of a Young Girl", "My Brilliant Career", "These Violent Delights", "How to Talk to Girls", "The DUFF", "The Three Adventurers at Fungalore", "Crazy", "The Monk", "Looking Back", "Lost Laysen", "Flowers and Shadows", "Solitaire", "The Icarus Girl", "Eragon", "How the World Began", "Sharh Al-Isti'aadha wal-Basmalah", "The Broken Melody", "The Neon Bible", "True Spirit", "The Loom of Youth", "Mirror Dreams", "Mirror Wakes", "Waywalkers", "Timekeepers", "The Extraordinary and Unusual Adventures of Horatio Lyle", "Swordbird", "Sword Quest", "Sword Mountain", "What's Left of Me"]
+    cse_books = ["Introduction to Algorithms", "The C Programming Language", "The Pragmatic Programmer", "The Art of Computer Programming", "Structure and Interpretation of Computer Programs", "The Mythical Man-Month", "Design patterns", "Clean Code", "Code", "Operating systems", "Purely functional data structures", "Software design for flexibility", "Computer Organization and Design: The Hardware/software Interface", "Discrete Mathematics and Its Applications", "Python programming", "Theory of computation", "AI and humanity", "Foundations of Computer Science", "How the Mind Works?", "Intro to CS book", "Mathematical foundations of data science", "Network programming", "Programming Language Design and Implementation", "Computational thinking"]
+    ece_books = ["Signals and Systems", "Analogue electronics", "Microe   lectronic Circuits", "Linear ICs", "Engineering Mathematics", "Network theory", "Semiconductor device", "Complex analysis", "Control system", "Control Systems Engineering", "Differential equation", "Digital electronics", "Electrical m", "Electronic circuits", "Linear algebra", "Microprocessors and microcontrollers", "Numerical analysis", "Electronic Devices and Circuit Theory", "Antenna theory by Balanis", "Digital Signal Processing by sk Mitra", "Network Analysis by Van Valkenburg", "CO", "Digital circuits by anand kumar", "Fundamentals of digital SY"]
+    gen=Library('Stroy Library',book_names)
+    cse=Library('CSE',cse_books)
+    ece=Library('ECE',ece_books)
+    print_slow('Welcome!...')
+    print('1.story\n2.cse\n3.ece\n')
+    ch=int(input('Enter the library you want to enter:'))
+    if ch==1:
+        print_slow('Taking you to story library')
+        handle(gen)
+    elif ch==2:
+        print_slow('Taking you to CSE library')
+        handle(cse)
+    elif ch==3:
+        print_slow('Taking you to ECE library')
+        handle(ece)
+    else:
+        print('Enter valid one!')
